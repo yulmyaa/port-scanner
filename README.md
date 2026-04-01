@@ -13,18 +13,18 @@ Tech stack
  - socket module
 ***
 How to run
-python portscanner.py
-Enter the target IP address when prompted:
-scan IP: 127.0.0.1
+python portscanner.py   
+Enter the target IP address when prompted:   
+scan IP: 127.0.0.1   
 ***
-Example output
+Example output   
 [OPEN] port 135
 
 [+] open ports:
-- 135
+135
 
 [+] total open ports: 1
-***
+***   
 What I learned
 - Basic concepts of port scanning
 - Network communication using python sockets
