@@ -38,7 +38,7 @@ with open("port_result.txt", "w") as f:
     f.write("port scanning result\n")
     f.write(f"target IP: {ip}\n\n")
     for i in open_ports:
-        f.write("[OPEN] {open_ports}\n")
+        f.write("[OPEN] {i}\n")
     f.write(f"total {len(open_ports)} ports\n")
 
 print("saved port_result.txt")
