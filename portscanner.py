@@ -24,7 +24,7 @@ open_ports = []
 
 for port in range(1, 1024):
     if scan_port(ip, port):
-        banner = grab.banner(ip, port)
+        banner = grab_banner(ip, port)
         if banner:
             print(f"[OPEN] {port} -> {banner}")
         else:
@@ -38,7 +38,7 @@ with open("port_result.txt", "w") as f:
     f.write("port scanning result\n")
     f.write(f"target IP: {ip}\n\n")
     for i in open_ports:
-        f.write("[OPEN] {i}\n")
+        f.write(f"[OPEN] {i}\n")
     f.write(f"total {len(open_ports)} ports\n")
 
 print("saved port_result.txt")
